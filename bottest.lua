@@ -154,6 +154,7 @@ client:on('messageCreate', function(message)
 		for i = 1, #userlist, 1 do
 			if userlist[i] == author then murmansk = i end
 		end
+		if murmansk == nil then message.channel:send("Start using ;;start dumby") else
 		find2(";;give",seversk)
 		seversk[1] = tonumber(seversk[1])
 		if type(seversk[1]) ~= "number" or message.mentionedUsers[1] == nil or moneylist[murmansk] < seversk[1] then else
@@ -168,6 +169,7 @@ client:on('messageCreate', function(message)
 		message.channel:send(message.author.name.." gave "..seversk[1].."₪ to "..seversk[2].."!")
 		end
 		end
+		end
 	elseif content:sub(1,#commandprefix+4) == commandprefix.."load" then
 		if content:gsub(";;load ","") == ";;load" or content:gsub(";;load ","") == ";;load " then else
 	    local l = content:gsub(";;load ","")
@@ -177,7 +179,7 @@ client:on('messageCreate', function(message)
 		for i in string.gmatch(l, ".") do
 			if i == "-" then
 				break
-			elseif i == string.sub(l,1,1) and oofe == 0 then
+			elseif i == string.sub(l,1,1) and kyzyl == 0 then
 				kyzyl = 1
 			else
 				moneyvalue = moneyvalue..i
@@ -195,8 +197,8 @@ client:on('messageCreate', function(message)
 			end
 		end
 		hryvniavalue = tonumber(hryvniavalue)
-		table.insert(hryvnialist,((hryvniavalue-math.ceil(author/34350602)-3256)/127))
-		message.channel:send(message.member.name.." loaded with "..((((l - (math.ceil(((fakeauthor/1346)*43)+(567*math.ceil(fakeauthor/10000))))) - (math.ceil(fakeauthor/14345666)))+(31112*346)-49309506)/34603).."₪ and "..((hryvniavalue-math.ceil(author/34350602)-3256)/127).."₴!")
+		table.insert(hryvnialist,((hryvniavalue-math.ceil(fakeauthor/34350602)-3256)/127))
+		message.channel:send(message.member.name.." loaded with "..((((moneyvalue - (math.ceil(((fakeauthor/1346)*43)+(567*math.ceil(fakeauthor/10000))))) - (math.ceil(fakeauthor/14345666)))+(31112*346)-49309506)/34603).."₪ and "..((hryvniavalue-math.ceil(fakeauthor/34350602)-3256)/127).."₴!")
 		end
 	elseif content:sub(1,#commandprefix+12) == commandprefix.."number" then
 		rnumcheck = 1
