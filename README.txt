@@ -20,7 +20,7 @@ you can change anything about the script but i'd definitely recommend keeping th
 
 355 end)
 
-359 client:run("Bot NDc1ODgwNzExOTg4MTgzMDcx.XKlAfQ.wifmzzd8bA1vPj2W8ugTMFVfQIU")
+359 client:run("Bot --[[token here]]") (Make sure you replace --[[token here]] with the bot's token before running it, or it won't work)
 
 or else the bot basically won't function
 
