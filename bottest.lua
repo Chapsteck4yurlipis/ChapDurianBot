@@ -358,4 +358,4 @@ end)
 
 
 
-client:run("Bot NDc1ODgwNzExOTg4MTgzMDcx.XKlAfQ.wifmzzd8bA1vPj2W8ugTMFVfQIU")
+client:run("Bot --[[token here]]")
